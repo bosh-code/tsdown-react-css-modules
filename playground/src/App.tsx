@@ -1,4 +1,4 @@
-import { MyButton } from '../../src'
+import { MyButton } from '../../dist'
 
 export function App() {
   return (
