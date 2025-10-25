@@ -1,5 +1,6 @@
 import { defineConfig } from 'tsdown'
 import LightningCSS from 'unplugin-lightningcss/rolldown'
+import injectCssPlugin from '@bosh-code/tsdown-plugin-inject-css';
 
 export default defineConfig({
   target: [
@@ -22,6 +23,7 @@ export default defineConfig({
       options: {
         minify: true
       }
-    })
+    }),
+    injectCssPlugin()
   ]
 })
